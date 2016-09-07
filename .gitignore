@@ -1,12 +1,107 @@
-*.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+import java.util.Scanner;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+/*
+ * Copyright (C) 2016 Finarfin
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+package lab1_finarfin;
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+/**
+ *
+ * @author Finarfin
+ */
+public class Lab1_Finarfin {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Bienvenido al programa de Finarfin");
+        System.out.println("1. Calculadora");
+        System.out.println("Elija la operacion que desea realizar "
+                + "1.Suma; 2. resta; 3. Multiplicacion; 4. Division ");
+        Scanner as = new Scanner(System.in);
+        int a = as.nextInt();
+
+        if (a <= 0 || a > 4) {
+            System.out.println("Entrada no valida");
+        }
+
+        if (a == 1) {
+            System.out.println("Usted ha elegido sumar");
+            System.out.println("Ingrese el primer sumando");
+            Scanner sd = new Scanner(System.in);
+            int b = sd.nextInt();
+
+            System.out.println("Ingrese el segundo sumando");
+            Scanner df = new Scanner(System.in);
+            int c = df.nextInt();
+
+            System.out.println("La suma: " + (b) + "+" + (c) + "=" + (b + c));
+        }
+        if (a == 2) {
+            System.out.println("Usted ha elegido restar");
+            System.out.println("Ingrese el minuendo");
+            Scanner sd = new Scanner(System.in);
+            int d = sd.nextInt();
+
+            System.out.println("Ingrese el sustraendo");
+            Scanner df = new Scanner(System.in);
+            int e = df.nextInt();
+
+            System.out.println("La resta: " + (d) + "-" + (e) + "=" + (d - e));
+        }
+        if (a == 3) {
+            System.out.println("Usted ha elegido multiplicar");
+            System.out.println("Ingrese el primer factor");
+            Scanner sd = new Scanner(System.in);
+            int f = sd.nextInt();
+
+            System.out.println("Ingrese el segundo factor");
+            Scanner df = new Scanner(System.in);
+            int g = df.nextInt();
+
+            System.out.println("La multiplicacion: " + (f) + "*"
+                    + (g) + "=" + (f * g));
+
+        }
+        if (a == 4) {
+            System.out.println("Usted ha elegido dividir");
+            System.out.println("Ingrese el dividendo");
+            Scanner sd = new Scanner(System.in);
+            int h = sd.nextInt();
+
+            System.out.println("Ingrese el divisor");
+            Scanner df = new Scanner(System.in);
+            int i = df.nextInt();
+
+            System.out.println("La division: " + (h) + "/" + (i)
+                    + "=" + (h / i));
+        }
+        System.out.println("2. Edad");
+        System.out.println("Favor ingrese su edad");
+        Scanner fg = new Scanner(System.in);
+        int j = fg.nextInt();
+        System.out.println("Su edad es: " + (j) + " años.");
+
+        if (j < 18) {
+            System.out.println("Usted es menor de edad.");
+        }
+
+        if (j >= 18) {
+            System.out.println("Usted es mayor de edad.");
+        }
+    }
+}
