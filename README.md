@@ -1,5 +1,5 @@
 # Lab_1
-Primera clase del curso Computación para Economistas durante el II ciclo 2016, Universidad de Costa Rica.
+Primera lección del curso Computación para Economistas durante el II ciclo 2016, Universidad de Costa Rica.
 A continuación se explica lo que se realizó en el programa
 
 1. Calculadora
